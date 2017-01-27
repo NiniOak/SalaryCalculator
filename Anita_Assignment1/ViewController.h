@@ -8,7 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+int timercount;
+
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *LabelTotalSalary;
+@property (weak, nonatomic) IBOutlet UILabel *LabelSalaryPerSecond;
+@property (weak, nonatomic) IBOutlet UILabel *LabelTotalSalaryPerSecond;
+@property double NewSalary, TotalTime, SalaryPerSecond;
+@property double Months, Hours, Weeks, Seconds;
+@property double CostText;
+- (IBAction)StartButton:(id)sender;
+- (IBAction)StopButton:(id)sender;
+- (IBAction)SalarySlider:(id)sender;
 
 
 @end
